@@ -1,0 +1,166 @@
+
+body {
+  max-width: 1200px;
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+h2,h3,p {
+  margin: 0;
+  padding: 10px;
+}
+
+a {
+  color: #000;  
+}
+
+.header {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10%;
+}
+
+.navbar p {
+  display: inline-flex;
+  padding: 10px 70px;
+}
+
+.main {
+  padding-top: 30px;
+}
+
+.mission {
+  letter-spacing: 2px;
+  display: flex;
+  height: 800px;
+  width: auto;
+  padding-top: 35px;
+  background-image: url("https://images.unsplash.com/photo-1554435493-93422e8220c8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8YnVpbGRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60");
+  // background-image: url("https://images.unsplash.com/photo-1615822753755-f87c39e39cf8?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60");
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.mission .content {
+  margin: auto;
+  background-color:#2a2222;
+  color: #fff;
+  width: 100%;
+}
+
+#portofilio {
+  //margin: 80px; 
+  padding-top: 70px;
+  min-height: 550px;
+}
+
+.departments {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.department {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.department span{
+  text-align: center;
+  padding: 10px;
+  min-width: 200px;
+  font-weight: bold;
+}
+
+.department img {
+  height: auto;
+  width: 200px;
+  margin: 20px;
+}
+
+#ourteam {
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.team {
+  //margin: 50px;
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1588708348865-fdd6415878fd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTl8fGJ1aWxkaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
+  background-size: cover;
+}
+
+.teammate {
+  padding:10px;
+  color: #fff;
+  flex-basis: 300px;
+}
+
+.teammate img {
+  height: auto;
+  width: 200px;
+}
+
+.contact {
+  padding-top: 70px;
+}
+
+.copyright {
+  padding-top: 80px;
+}
+
+@media only screen and (max-width: 1048px) {
+  .navbar p{
+    font-size: 1em;
+    padding: 4%;
+    margin: 0 1%;
+    flex-wrap: wrap;
+  }
+  .teammate img {
+    margin-left: 2%;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+    .department img{
+      width:70%;
+      margin-left: 2%;
+      padding-left: 2%;
+  }
+  .department span {
+      text-align: start;
+  }
+} 
+  @media only screen and (max-width: 320px) {  
+  .department img{
+      width:50%;
+      margin-left: 1%;
+      padding-left: 1%;
+  }
+  .department span{
+      padding-left: .1em;
+      margin-left: .02px;;
+      font-size: 1em;
+      text-align: start;
+      min-width: 70px;
+  }
+  h2 + h5 {
+      font-size: .6em;
+      color: red;
+  }
+}
